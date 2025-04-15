@@ -756,3 +756,174 @@ body {
     }
 }
 
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .resume-container {
+        border-radius: 8px;
+    }
+    
+    .resume-header {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .profession {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+    
+    .section {
+        padding: 1.5rem;
+    }
+    
+    .skills-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .skills-column {
+        min-width: 100%;
+    }
+    
+    .timeline {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+    
+    .timeline-year {
+        left: -10px;
+        font-size: 0.7rem;
+        padding: 1px 5px;
+    }
+    
+    .edu-item::before {
+        left: -21px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .edu-title {
+        font-size: 1rem;
+    }
+    
+    .skill-legend {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .resume-header {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+    }
+    
+    .header-divider {
+        width: 80%;
+        margin: 0.8rem auto;
+    }
+    
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .project-item, .cert-item {
+        padding: 1rem 0.8rem;
+    }
+    
+    .project-title {
+        font-size: 1rem;
+    }
+    
+    .tech-tags {
+        gap: 0.3rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
+    
+    .github-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .skill-item {
+        margin-bottom: 0.6rem;
+    }
+    
+    .contact-item {
+        font-size: 0.9rem;
+    }
+    
+    .objective-text {
+        font-size: 0.95rem;
+    }
+    
+    .timeline {
+        margin-left: 5px;
+        padding-left: 15px;
+    }
+    
+    .timeline-year {
+        left: -5px;
+    }
+    
+    .edu-item::before {
+        left: -16px;
+    }
+}
+
+/* Ajustes específicos para navegação touch */
+@media (hover: none) {
+    .contact-item:hover,
+    .project-item:hover,
+    .cert-item:hover,
+    .skill-item:hover,
+    .section-title:hover,
+    .github-link:hover {
+        transform: none;
+    }
+    
+    .skill-item:hover .skill-icon {
+        transform: none;
+    }
+    
+    .section-title:hover .section-icon {
+        transform: none;
+        background-color: var(--primary-lighter);
+        color: var(--primary);
+    }
+    
+    .contact-item a:hover::after {
+        width: 0;
+    }
+}
+
