@@ -1,18 +1,18 @@
 :root {
-    --primary: #a91c1c;           /* Vermelho escuro */
-    --primary-dark: #7e0707;      /* Vermelho mais escuro/vinho */
-    --primary-light: #c02929;     /* Vermelho médio */
-    --primary-lighter: #ffe5e5;   /* Vermelho bem claro para fundos */
-    --secondary: #444;            /* Cinza escuro */
-    --dark: #222;                 /* Quase preto */
-    --light: #f8f8f8;             /* Branco suave */
-    --accent: #8a2222;            /* Vinho */
-    --gray-100: #f1f1f1;          /* Cinza bem claro */
-    --gray-200: #e0e0e0;          /* Cinza claro */
-    --gray-300: #ccc;             /* Cinza médio claro */
-    --gray-400: #999;             /* Cinza médio */
-    --gray-500: #666;             /* Cinza médio escuro */
-    --success: #9c2b2b;           /* Vermelho indicador de sucesso */
+    --primary: #333333;           /* Cinza escuro (quase preto) em vez de vermelho */
+    --primary-dark: #1a1a1a;      /* Preto em vez de vermelho escuro */
+    --primary-light: #666666;     /* Cinza médio em vez de vermelho médio */
+    --primary-lighter: #f2f2f2;   /* Cinza bem claro em vez de vermelho claro */
+    --secondary: #444;            /* Mantido o cinza escuro */
+    --dark: #222;                 /* Mantido quase preto */
+    --light: #f8f8f8;             /* Mantido branco suave */
+    --accent: #555555;            /* Cinza escuro em vez de vinho */
+    --gray-100: #f1f1f1;          /* Mantido cinza bem claro */
+    --gray-200: #e0e0e0;          /* Mantido cinza claro */
+    --gray-300: #ccc;             /* Mantido cinza médio claro */
+    --gray-400: #999;             /* Mantido cinza médio */
+    --gray-500: #666;             /* Mantido cinza médio escuro */
+    --success: #444444;           /* Cinza escuro em vez de vermelho */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
@@ -26,7 +26,7 @@
 
 body {
     background-color: var(--gray-100);
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239c2b2b' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23333333' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: var(--dark);
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
@@ -41,7 +41,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(169, 28, 28, 0.08);
+    border: 1px solid rgba(51, 51, 51, 0.08);
 }
 
 .resume-header {
@@ -365,15 +365,15 @@ body {
 }
 
 .highlight::after {
-    background-color: #2e7d32; /* Verde escuro para habilidades dominadas */
+    background-color: #000000; /* Preto para habilidades dominadas em vez de verde */
 }
 
 .intermediate::after {
-    background-color: #ff9800; /* Laranja para habilidades intermediárias */
+    background-color: #666666; /* Cinza médio para habilidades intermediárias em vez de laranja */
 }
 
 .learning::after {
-    background-color: #c41c1c; /* Vermelho para habilidades em aprendizado */
+    background-color: #aaaaaa; /* Cinza claro para habilidades em aprendizado em vez de vermelho */
 }
 
 .lang-level {
@@ -461,7 +461,7 @@ body {
     right: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(169, 28, 28, 0.03));
+    background: linear-gradient(90deg, transparent, rgba(51, 51, 51, 0.03));
     transition: width 0.4s ease;
     z-index: 0;
     pointer-events: none;
@@ -494,7 +494,7 @@ body {
 }
 
 .tech-tag {
-    background: rgba(169, 28, 28, 0.08);
+    background: rgba(51, 51, 51, 0.08);
     color: var(--primary);
     font-size: 0.75rem;
     padding: 0.2rem 0.6rem;
@@ -592,15 +592,15 @@ body {
 }
 
 .dot-mastered {
-    background-color: #2e7d32; /* Verde escuro para habilidades dominadas */
+    background-color: #000000; /* Preto para habilidades dominadas em vez de verde */
 }
 
 .dot-intermediate {
-    background-color: #ff9800; /* Laranja para habilidades intermediárias */
+    background-color: #666666; /* Cinza médio para habilidades intermediárias em vez de laranja */
 }
 
 .dot-learning {
-    background-color: #c41c1c; /* Vermelho para habilidades em aprendizado */
+    background-color: #aaaaaa; /* Cinza claro para habilidades em aprendizado em vez de vermelho */
 }
 
 /* Gradient background effect */
@@ -687,7 +687,7 @@ body {
     }
     
     .tech-tag {
-        background: rgba(169, 28, 28, 0.08) !important;
+        background: rgba(51, 51, 51, 0.08) !important;
         color: var(--primary) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
@@ -720,37 +720,37 @@ body {
     }
     
     .highlight .skill-text::after {
-        background-color: #2e7d32 !important;
+        background-color: #000000 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .learning .skill-text::after {
-        background-color: #c41c1c !important;
+        background-color: #aaaaaa !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .intermediate .skill-text::after {
-        background-color: #ff9800 !important;
+        background-color: #666666 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .dot-mastered {
-        background-color: #2e7d32 !important;
+        background-color: #000000 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .dot-intermediate {
-        background-color: #ff9800 !important;
+        background-color: #666666 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .dot-learning {
-        background-color: #c41c1c !important;
+        background-color: #aaaaaa !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
