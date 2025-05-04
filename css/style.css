@@ -25,8 +25,7 @@
 }
 
 body {
-    background-color: var(--gray-100);
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23333333' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: #f4f4f4;
     color: var(--dark);
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
@@ -47,7 +46,7 @@ body {
 .resume-header {
     position: relative;
     padding: 3rem 2.5rem 2.5rem;
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    background: linear-gradient(135deg, #1a1a1a, #333333);
     color: white;
 }
 
@@ -285,7 +284,7 @@ body {
 }
 
 .skills-category {
-    color: var(--primary-dark);
+    color: var(--primary);
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -295,6 +294,17 @@ body {
 
 .skills-list {
     list-style-type: none;
+}
+
+.skills-list a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.skills-list a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
 }
 
 .skill-item {
@@ -336,19 +346,19 @@ body {
     display: inline-flex;
     align-items: center;
     padding-right: 15px; /* Espaço consistente para a bolinha */
+    font-weight: 500;
 }
 
 .highlight {
-    font-weight: 500;
     color: var(--dark);
 }
 
 .intermediate {
-    color: var(--secondary);
+    color: var(--dark);
 }
 
 .learning {
-    color: var(--gray-500);
+    color: var(--dark);
     font-style: italic;
 }
 
@@ -365,15 +375,15 @@ body {
 }
 
 .highlight::after {
-    background-color: #000000; /* Preto para habilidades dominadas em vez de verde */
+    background-color: #4CAF50; /* Verde para habilidades consolidadas */
 }
 
 .intermediate::after {
-    background-color: #666666; /* Cinza médio para habilidades intermediárias em vez de laranja */
+    background-color: #FFC107; /* Amarelo para habilidades intermediárias */
 }
 
 .learning::after {
-    background-color: #aaaaaa; /* Cinza claro para habilidades em aprendizado em vez de vermelho */
+    background-color: #F44336; /* Vermelho para habilidades em desenvolvimento */
 }
 
 .lang-level {
@@ -394,7 +404,7 @@ body {
 }
 
 .cert-item {
-    background: #f8f5f5;
+    background: #f5f5f5;
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -432,12 +442,38 @@ body {
     color: var(--gray-500);
 }
 
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    transition: all 0.2s;
+}
+
+.cert-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(3px);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-links .github-link {
+    margin: 0;
+}
+
 .projects-container {
     margin-top: 1rem;
 }
 
 .project-item {
-    background: #f8f5f5;
+    background: #f5f5f5;
     border-radius: 8px;
     padding: 1.2rem;
     margin-bottom: 1.2rem;
@@ -538,17 +574,17 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #f8f5f5;
+    background-color: #f5f5f5;
     padding: 0.5rem 1rem;
     border-radius: 30px;
     transition: all 0.2s;
-    border: 1px solid #f0e0e0;
+    border: 1px solid #e0e0e0;
 }
 
 .interest-item:hover {
     background-color: var(--primary-lighter);
     transform: translateY(-2px);
-    border-color: #e5c5c5;
+    border-color: #cccccc;
 }
 
 .interest-icon {
@@ -574,7 +610,7 @@ body {
     font-size: 0.85rem;
     color: var(--gray-500);
     padding: 0.8rem;
-    background-color: #f8f5f5;
+    background-color: #f5f5f5;
     border-radius: 8px;
     border-left: 3px solid var(--primary);
 }
@@ -592,15 +628,15 @@ body {
 }
 
 .dot-mastered {
-    background-color: #000000; /* Preto para habilidades dominadas em vez de verde */
+    background-color: #4CAF50; /* Verde para habilidades consolidadas */
 }
 
 .dot-intermediate {
-    background-color: #666666; /* Cinza médio para habilidades intermediárias em vez de laranja */
+    background-color: #FFC107; /* Amarelo para habilidades intermediárias */
 }
 
 .dot-learning {
-    background-color: #aaaaaa; /* Cinza claro para habilidades em aprendizado em vez de vermelho */
+    background-color: #F44336; /* Vermelho para habilidades em desenvolvimento */
 }
 
 /* Gradient background effect */
@@ -924,6 +960,40 @@ body {
     
     .contact-item a:hover::after {
         width: 0;
+    }
+}
+
+.download-pdf {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: #fff;
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-light);
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    z-index: 1000;
+}
+.download-pdf:hover {
+    background: var(--primary-light);
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+.download-pdf i {
+    font-size: 1.1rem;
+}
+@media print {
+    .download-pdf {
+        display: none !important;
     }
 }
 

@@ -17,6 +17,9 @@
 </head>
 <body>
     <div class="resume-container">
+        <button class="download-pdf" onclick="window.print()" title="Baixar currículo em PDF">
+            <i class="fas fa-file-download"></i> Baixar PDF
+        </button>
         <div class="resume-header">
             <div class="header-bg"></div>
             <div class="header-content">
@@ -48,10 +51,10 @@
                 Objetivo Profissional
             </h2>
             <p class="objective-text">
-                Estudante na área de tecnologia com grande interesse em desenvolvimento web, mobile e jogos. 
-                Busco oportunidades de estágio e aprendizado que me proporcionem crescimento, conhecimento e exposição a 
-                desafios técnicos no desenvolvimento de software. Comprometido com o contínuo aprimoramento das minhas 
-                habilidades e com a entrega de soluções criativas e eficazes.
+                Estudante na área de tecnologia com foco em desenvolvimento web, mobile e software multiplataforma. 
+                Busco oportunidades de estágio e aprendizado que me proporcionem 
+                crescimento, conhecimento e exposição a desafios técnicos no desenvolvimento de software. Comprometido com o 
+                contínuo aprimoramento das minhas habilidades e com a entrega de soluções criativas e eficazes.
             </p>
         </div>
         
@@ -90,17 +93,26 @@
                     </h3>
                     <p class="project-description">
                         Desenvolvimento de portfolio web responsivo para apresentação de projetos e habilidades profissionais.
+                        Implementado com HTML5 semântico, CSS3 moderno com variáveis e flexbox, e JavaScript para interatividade.
+                        Design moderno com animações suaves e totalmente responsivo para todos os dispositivos.
                     </p>
                     <div class="tech-tags">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript</span>
                         <span class="tech-tag">Responsivo</span>
+                        <span class="tech-tag">Flexbox</span>
                     </div>
-                    <a href="https://github.com/JV-L0pes/JV-L0pes.github.io" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i>
-                        <span>Ver no GitHub</span>
-                    </a>
+                    <div class="project-links">
+                        <a href="https://github.com/JV-L0pes/JV-L0pes.github.io" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>Ver no GitHub</span>
+                        </a>
+                        <a href="https://jv-l0pes.github.io" target="_blank" class="github-link" style="margin-left: 10px;">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Ver Projeto</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-item">
                     <h3 class="project-title">
@@ -108,17 +120,26 @@
                     </h3>
                     <p class="project-description">
                         Aplicação web para criação e visualização de gráficos burndown, ferramenta essencial para metodologias ágeis de desenvolvimento.
+                        Desenvolvido com JavaScript puro para manipulação do DOM e cálculos de progresso, HTML5 para estrutura
+                        e CSS3 para estilização. Permite entrada de dados, cálculos automáticos e visualização em tempo real.
                     </p>
                     <div class="tech-tags">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Gráficos</span>
+                        <span class="tech-tag">DOM</span>
+                        <span class="tech-tag">SCRUM</span>
                     </div>
-                    <a href="https://github.com/JV-L0pes/burndown-chart" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i>
-                        <span>Ver no GitHub</span>
-                    </a>
+                    <div class="project-links">
+                        <a href="https://github.com/JV-L0pes/burndown-chart" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>Ver no GitHub</span>
+                        </a>
+                        <a href="https://jv-l0pes.github.io/burndown-chart" target="_blank" class="github-link" style="margin-left: 10px;">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Ver Projeto</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -146,11 +167,27 @@
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon"><i class="devicon-vscode-plain colored"></i></div>
-                            <span class="learning" style="margin-right: 4px;">Dev. Front-end/Back-end</span>
+                            <span class="highlight">Editores: VSCode, Cursor</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-vscode-plain colored"></i></div>
+                            <span class="intermediate" style="margin-right: 4px;">Dev. Front-end/Back-end</span>
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
                             <span class="learning">Python</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-postgresql-plain colored"></i></div>
+                            <span class="intermediate">SQL/PostgreSQL</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
+                            <span class="learning">React</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span class="highlight">SCRUM (Metodologia Ágil)</span>
                         </li>
                     </ul>
                 </div>
@@ -225,7 +262,12 @@
                 <div class="cert-icon"><i class="fab fa-github"></i></div>
                 <div class="cert-content">
                     <div class="cert-title">Git e GitHub</div>
-                    <div class="cert-org">Curso Completo</div>
+                    <div class="cert-org">Udemy</div>
+                    <div class="cert-desc">Domínio de controle de versão, uso avançado de Git e GitHub, GitHub Pages, criação de branches e commits descritivos.</div>
+                    <a href="https://www.udemy.com/certificate/UC-c89ebe4b-b9ce-48ea-ba08-defb6645f09d/" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver Certificado</span>
+                    </a>
                 </div>
             </div>
             <div class="cert-item">
@@ -233,6 +275,7 @@
                 <div class="cert-content">
                     <div class="cert-title">Linux Unhatched</div>
                     <div class="cert-org">Cisco Networking Academy</div>
+                    <div class="cert-desc">Comandos básicos de Linux para programação: navegação, manipulação de arquivos e diretórios.</div>
                 </div>
             </div>
             <div class="cert-item">
@@ -240,6 +283,7 @@
                 <div class="cert-content">
                     <div class="cert-title">Git Cursa</div>
                     <div class="cert-org">Plataforma de Cursos Online</div>
+                    <div class="cert-desc">Fundamentos de Git para trabalho em equipe e versionamento colaborativo.</div>
                 </div>
             </div>
             <a href="https://github.com/JV-L0pes/Certificados" target="_blank" class="github-link" style="margin-top: 1rem; display: inline-flex;">
@@ -255,24 +299,24 @@
             </h2>
             <ul class="skills-list">
                 <li class="skill-item">
-                    <div class="skill-icon"><i class="fab fa-github"></i></div>
-                    <span><strong>GitHub:</strong> github.com/JV-L0pes</span>
-                </li>
-                <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-certificate"></i></div>
-                    <span><strong>Certificados:</strong> github.com/JV-L0pes/Certificados</span>
+                    <span><strong>Certificados:</strong> <a href="https://github.com/JV-L0pes/Certificados" target="_blank">github.com/JV-L0pes/Certificados</a></span>
                 </li>
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-envelope"></i></div>
                     <span><strong>E-mail:</strong> joaovlr9@gmail.com</span>
                 </li>
                 <li class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-linkedin"></i></div>
+                    <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joão-victor-lopes-rosa-a7a558363" target="_blank">linkedin.com/in/joão-victor-lopes-rosa-a7a558363</a></span>
+                </li>
+                <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-globe"></i></div>
-                    <span><strong>Portfólio:</strong> github.com/JV-L0pes/JV-L0pes.github.io</span>
+                    <span><strong>Portfólio:</strong> <a href="https://jv-l0pes.github.io/" target="_blank">jv-l0pes.github.io</a></span>
                 </li>
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                    <span><strong>Burndown Chart Generator:</strong> github.com/JV-L0pes/burndown-chart</span>
+                    <span><strong>Burndown Chart Generator:</strong> <a href="https://github.com/JV-L0pes/burndown-chart" target="_blank">github.com/JV-L0pes/burndown-chart</a></span>
                 </li>
             </ul>
         </div>
