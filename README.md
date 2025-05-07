@@ -1,6 +1,6 @@
 # Currículo Online - João Victor Lopes Rosa
 
-Este repositório contém meu currículo online desenvolvido em HTML e CSS.
+Este repositório contém meu currículo online desenvolvido em HTML, CSS e JS.
 
 ## Sobre o Projeto
 
