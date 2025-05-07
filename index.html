@@ -14,9 +14,219 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- CSS Principal -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            .resume-container {
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .project-item, .cert-item {
+                page-break-inside: avoid;
+            }
+
+            .download-pdf {
+                display: none !important;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000 !important;
+            }
+
+            .dot-mastered { background-color: #4CAF50 !important; }
+            .dot-intermediate { background-color: #FFC107 !important; }
+            .dot-learning { background-color: #F44336 !important; }
+
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            /* Estilos específicos para otimização de impressão */
+            .print-optimized .section {
+                margin-bottom: 0.5rem !important;
+            }
+
+            .print-optimized .section-title {
+                margin-bottom: 0.3rem !important;
+                font-size: 1.1em !important;
+            }
+
+            .print-optimized .project-item {
+                margin-bottom: 0.5rem !important;
+                padding: 0.3rem !important;
+            }
+
+            .print-optimized .project-description {
+                margin: 0.2rem 0 !important;
+                font-size: 0.85em !important;
+                line-height: 1.3 !important;
+            }
+
+            .print-optimized .tech-tags {
+                margin-top: 0.2rem !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 0.2rem !important;
+            }
+
+            .print-optimized .tech-tag {
+                padding: 0.1rem 0.2rem !important;
+                margin: 0 !important;
+                font-size: 0.75em !important;
+            }
+
+            .print-optimized .cert-item {
+                margin-bottom: 0.3rem !important;
+                padding: 0.3rem !important;
+            }
+
+            .print-optimized .skills-container {
+                gap: 0.3rem !important;
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .print-optimized .skill-item {
+                margin-bottom: 0.2rem !important;
+                font-size: 0.9em !important;
+            }
+
+            .print-optimized .header-content {
+                padding: 0.3rem 0 !important;
+            }
+
+            .print-optimized .contact-info {
+                margin-top: 0.2rem !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 0.5rem !important;
+            }
+
+            .print-optimized .contact-item {
+                margin-right: 0.5rem !important;
+                font-size: 0.9em !important;
+            }
+
+            .print-optimized .contact-item a {
+                color: #fff !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .print-optimized .objective-text {
+                margin: 0.2rem 0 !important;
+                font-size: 0.9em !important;
+                line-height: 1.3 !important;
+            }
+
+            .print-optimized .edu-item {
+                margin-bottom: 0.3rem !important;
+            }
+
+            .print-optimized .edu-title {
+                margin-bottom: 0.1rem !important;
+                font-size: 0.9em !important;
+            }
+
+            .print-optimized .edu-date {
+                font-size: 0.8em !important;
+            }
+
+            .print-optimized .edu-place {
+                font-size: 0.85em !important;
+            }
+
+            .print-optimized .project-title {
+                font-size: 0.95em !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .print-optimized .project-links {
+                margin-top: 0.2rem !important;
+            }
+
+            .print-optimized .project-links a {
+                font-size: 0.8em !important;
+                padding: 0.1rem 0.3rem !important;
+            }
+
+            .print-optimized .cert-title {
+                font-size: 0.9em !important;
+                margin-bottom: 0.1rem !important;
+            }
+
+            .print-optimized .cert-org {
+                font-size: 0.8em !important;
+            }
+
+            .print-optimized .cert-desc {
+                font-size: 0.85em !important;
+                margin: 0.1rem 0 !important;
+            }
+
+            .print-optimized .name {
+                font-size: 1.4em !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .print-optimized .profession {
+                font-size: 1em !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .print-optimized .header-divider {
+                margin: 0.2rem 0 !important;
+            }
+
+            .print-optimized .skill-legend {
+                margin-top: 0.3rem !important;
+                padding: 0.3rem !important;
+                font-size: 0.8em !important;
+            }
+
+            .print-optimized .legend-item {
+                margin-right: 0.5rem !important;
+            }
+
+            .print-optimized .legend-dot {
+                width: 8px !important;
+                height: 8px !important;
+            }
+
+            /* Nota sobre versão web */
+            .print-optimized::after {
+                content: "Currículo hospedado em web via GitHub Pages. Para ver o currículo com interações, animações e responsividade: jv-l0pes.github.io/Curriculo" !important;
+                display: block !important;
+                text-align: center !important;
+                font-size: 0.8em !important;
+                color: #666 !important;
+                margin-top: 1rem !important;
+                padding: 0.5rem !important;
+                border-top: 1px solid #ddd !important;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="resume-container">
+    <div class="resume-container print-optimized">
         <button class="download-pdf" onclick="window.print()" title="Baixar currículo em PDF">
             <i class="fas fa-file-download"></i> Baixar PDF
         </button>
@@ -141,6 +351,29 @@
                         </a>
                     </div>
                 </div>
+                <div class="project-item">
+                    <h3 class="project-title">
+                        <i class="fas fa-sitemap"></i> Site ABP — Esqueleto/Modelo de Projeto
+                    </h3>
+                    <p class="project-description">
+                        Estruturei o esqueleto completo do site do projeto ABP, desenvolvendo todas as páginas em HTML, CSS e JavaScript, 
+                        conforme os critérios acadêmicos. O repositório serve como base para o desenvolvimento colaborativo da equipe, 
+                        garantindo padronização e agilidade no projeto.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Trabalho em Equipe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JV-L0pes/Site_ABP" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>Ver no GitHub</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -175,7 +408,7 @@
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
-                            <span class="learning">Python</span>
+                            <span class="intermediate">Python</span>
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon"><i class="devicon-postgresql-plain colored"></i></div>
@@ -183,7 +416,7 @@
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
-                            <span class="learning">React</span>
+                            <span class="intermediate">React</span>
                         </li>
                         <li class="skill-item">
                             <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
@@ -300,7 +533,7 @@
             <ul class="skills-list">
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-certificate"></i></div>
-                    <span><strong>Certificados:</strong> <a href="https://github.com/JV-L0pes/Certificados" target="_blank">github.com/JV-L0pes/Certificados</a></span>
+                    <span><strong>Certificados:</strong> github.com/JV-L0pes/Certificados</span>
                 </li>
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-envelope"></i></div>
@@ -308,15 +541,15 @@
                 </li>
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fab fa-linkedin"></i></div>
-                    <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joão-victor-lopes-rosa-a7a558363" target="_blank">linkedin.com/in/joão-victor-lopes-rosa-a7a558363</a></span>
+                    <span><strong>LinkedIn:</strong> linkedin.com/in/joão-victor-lopes-rosa-a7a558363</span>
                 </li>
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-globe"></i></div>
-                    <span><strong>Portfólio:</strong> <a href="https://jv-l0pes.github.io/" target="_blank">jv-l0pes.github.io</a></span>
+                    <span><strong>Portfólio:</strong> jv-l0pes.github.io</span>
                 </li>
                 <li class="skill-item">
                     <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                    <span><strong>Burndown Chart Generator:</strong> <a href="https://github.com/JV-L0pes/burndown-chart" target="_blank">github.com/JV-L0pes/burndown-chart</a></span>
+                    <span><strong>Burndown Chart Generator:</strong> github.com/JV-L0pes/burndown-chart</span>
                 </li>
             </ul>
         </div>
