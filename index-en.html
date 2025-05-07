@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of João Victor Lopes Rosa, software developer in training">
+    <meta name="keywords" content="resume, developer, programming, software, web, mobile, games">
+    <title>Resume - João Victor Lopes Rosa</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
+    <!-- Devicons para ícones de tecnologia -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            .resume-container {
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .project-item, .cert-item {
+                page-break-inside: avoid;
+            }
+
+            .download-pdf {
+                display: none !important;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000 !important;
+            }
+
+            .dot-mastered { background-color: #4CAF50 !important; }
+            .dot-intermediate { background-color: #FFC107 !important; }
+            .dot-learning { background-color: #F44336 !important; }
+
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            /* Estilos específicos para otimização de impressão */
+            .print-optimized .section {
+                margin-bottom: 0.5rem !important;
+            }
+
+            .print-optimized .section-title {
+                margin-bottom: 0.3rem !important;
+                font-size: 1.1em !important;
+            }
+
+            .print-optimized .project-item {
+                margin-bottom: 0.5rem !important;
+                padding: 0.3rem !important;
+            }
+
+            .print-optimized .project-description {
+                margin: 0.2rem 0 !important;
+                font-size: 0.85em !important;
+                line-height: 1.3 !important;
+            }
+
+            .print-optimized .tech-tags {
+                margin-top: 0.2rem !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 0.2rem !important;
+            }
+
+            .print-optimized .tech-tag {
+                padding: 0.1rem 0.2rem !important;
+                margin: 0 !important;
+                font-size: 0.75em !important;
+            }
+
+            .print-optimized .cert-item {
+                margin-bottom: 0.3rem !important;
+                padding: 0.3rem !important;
+            }
+
+            .print-optimized .skills-container {
+                gap: 0.3rem !important;
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .print-optimized .skill-item {
+                margin-bottom: 0.2rem !important;
+                font-size: 0.9em !important;
+            }
+
+            .print-optimized .header-content {
+                padding: 0.3rem 0 !important;
+            }
+
+            .print-optimized .contact-info {
+                margin-top: 0.2rem !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 0.5rem !important;
+            }
+
+            .print-optimized .contact-item {
+                margin-right: 0.5rem !important;
+                font-size: 0.9em !important;
+            }
+
+            .print-optimized .contact-item a {
+                color: #fff !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .print-optimized .objective-text {
+                margin: 0.2rem 0 !important;
+                font-size: 0.9em !important;
+                line-height: 1.3 !important;
+            }
+
+            .print-optimized .edu-item {
+                margin-bottom: 0.3rem !important;
+            }
+
+            .print-optimized .edu-title {
+                margin-bottom: 0.1rem !important;
+                font-size: 0.9em !important;
+            }
+
+            .print-optimized .edu-date {
+                font-size: 0.8em !important;
+            }
+
+            .print-optimized .edu-place {
+                font-size: 0.85em !important;
+            }
+
+            .print-optimized .project-title {
+                font-size: 0.95em !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .print-optimized .project-links {
+                margin-top: 0.2rem !important;
+            }
+
+            .print-optimized .project-links a {
+                font-size: 0.8em !important;
+                padding: 0.1rem 0.3rem !important;
+            }
+
+            .print-optimized .cert-title {
+                font-size: 0.9em !important;
+                margin-bottom: 0.1rem !important;
+            }
+
+            .print-optimized .cert-org {
+                font-size: 0.8em !important;
+            }
+
+            .print-optimized .cert-desc {
+                font-size: 0.85em !important;
+                margin: 0.1rem 0 !important;
+            }
+
+            .print-optimized .name {
+                font-size: 1.4em !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .print-optimized .profession {
+                font-size: 1em !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .print-optimized .header-divider {
+                margin: 0.2rem 0 !important;
+            }
+
+            .print-optimized .skill-legend {
+                margin-top: 0.3rem !important;
+                padding: 0.3rem !important;
+                font-size: 0.8em !important;
+            }
+
+            .print-optimized .legend-item {
+                margin-right: 0.5rem !important;
+            }
+
+            .print-optimized .legend-dot {
+                width: 8px !important;
+                height: 8px !important;
+            }
+
+            /* Nota sobre versão web */
+            .print-optimized::after {
+                content: "Resume hosted on GitHub Pages. To see the resume with interactions, animations and responsiveness: jv-l0pes.github.io/Curriculo" !important;
+                display: block !important;
+                text-align: center !important;
+                font-size: 0.8em !important;
+                color: #666 !important;
+                margin-top: 1rem !important;
+                padding: 0.5rem !important;
+                border-top: 1px solid #ddd !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container print-optimized">
+        <button class="download-pdf" onclick="window.print()" title="Download resume as PDF">
+            <i class="fas fa-file-download"></i> Download PDF
+        </button>
+        <div class="resume-header">
+            <div class="header-bg"></div>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="name">JOÃO VICTOR LOPES ROSA</h1>
+                    <p class="profession">Multi-platform Software Developer</p>
+                    <div class="header-divider"></div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jacareí/SP</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(12) 99227-8428</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/JV-L0pes" target="_blank">github.com/JV-L0pes</a>
+                        </div>
+                        <div class="contact-item language-selector">
+                            <i class="fas fa-globe"></i>
+                            <select onchange="window.location.href=this.value">
+                                <option value="index.html">🇧🇷 Português</option>
+                                <option value="index-en.html" selected>🇺🇸 English</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-bullseye"></i></div>
+                Professional Objective
+            </h2>
+            <p class="objective-text">
+                Technology student focused on web, mobile, and multiplatform software development. 
+                Seeking internship and learning opportunities that provide growth, knowledge, and exposure 
+                to technical challenges in software development. Committed to continuous improvement of my 
+                skills and delivering creative and effective solutions.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-graduation-cap"></i></div>
+                Academic Background
+            </h2>
+            <div class="timeline">
+                <div class="timeline-year" style="top: 0;">2025</div>
+                <div class="timeline-year" style="top: 50%;">2022</div>
+                
+                <div class="edu-item">
+                    <div class="edu-title">Technology Degree in Multiplatform Software Development</div>
+                    <div class="edu-place">Fatec Jacareí</div>
+                    <div class="edu-date">Start: 2025 | Expected completion: 2027</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-title">High School and College Prep</div>
+                    <div class="edu-place">Anglo Jacareí</div>
+                    <div class="edu-address">R. Ramira Cabral, 57 - Centro, Jacareí - SP, 12327-300</div>
+                    <div class="edu-date">2020 - 2022</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-laptop-code"></i></div>
+                Practical Projects
+            </h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h3 class="project-title">
+                        <i class="fas fa-globe"></i> Personal Portfolio
+                    </h3>
+                    <p class="project-description">
+                        Development of a responsive web portfolio for presenting projects and professional skills.
+                        Implemented with semantic HTML5, modern CSS3 with variables and flexbox, and JavaScript for interactivity.
+                        Modern design with smooth animations and fully responsive for all devices.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                        <span class="tech-tag">Flexbox</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JV-L0pes/JV-L0pes.github.io" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://jv-l0pes.github.io" target="_blank" class="github-link" style="margin-left: 10px;">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Project</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">
+                        <i class="fas fa-chart-line"></i> Burndown Chart Generator
+                    </h3>
+                    <p class="project-description">
+                        Web application for creating and visualizing burndown charts, an essential tool for agile development methodologies.
+                        Developed with pure JavaScript for DOM manipulation and progress calculations, HTML5 for structure,
+                        and CSS3 for styling. Allows data input, automatic calculations, and real-time visualization.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">DOM</span>
+                        <span class="tech-tag">SCRUM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JV-L0pes/burndown-chart" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://jv-l0pes.github.io/burndown-chart" target="_blank" class="github-link" style="margin-left: 10px;">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Project</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">
+                        <i class="fas fa-sitemap"></i> ABP Site — Project-Based Learning (PBL) Project Skeleton/Model
+                    </h3>
+                    <p class="project-description">
+                        Structured the complete skeleton of the Project-Based Learning (PBL) site, developing all pages in HTML, CSS, and JavaScript,
+                        according to academic criteria. The repository serves as a base for collaborative team development,
+                        ensuring standardization and agility in the project.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">Team Work</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JV-L0pes/Site_ABP" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-code"></i></div>
+                Skills
+            </h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3 class="skills-category">Technical</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-html5-plain colored"></i></div>
+                            <span class="highlight">HTML/CSS</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div>
+                            <span class="intermediate">JavaScript</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+                            <span class="highlight">Version Control: Git, GitHub</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-vscode-plain colored"></i></div>
+                            <span class="highlight">Editors: VSCode, Cursor</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-vscode-plain colored"></i></div>
+                            <span class="intermediate" style="margin-right: 4px;">Front-end/Back-end Development</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
+                            <span class="intermediate">Python</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-postgresql-plain colored"></i></div>
+                            <span class="intermediate">SQL/PostgreSQL</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
+                            <span class="intermediate">React</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span class="highlight">SCRUM (Agile Methodology)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3 class="skills-category">Behavioral</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                            <span class="highlight">Effective communication and empathy</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                            <span class="highlight">Organization and time management</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-users"></i></div>
+                            <span class="highlight">Teamwork</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-book-reader"></i></div>
+                            <span class="highlight">Continuous learning</span>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <span class="highlight">Problem-solving</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-legend">
+                <div class="legend-item">
+                    <div class="legend-dot dot-mastered"></div>
+                    <span>Mastered skill</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot dot-intermediate"></div>
+                    <span>Intermediate skill</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot dot-learning"></div>
+                    <span>In development</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-language"></i></div>
+                Languages
+            </h2>
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-globe-americas"></i></div>
+                    <span>English: Advanced</span>
+                    <div class="lang-level">
+                        <div class="lang-dot"></div>
+                        <div class="lang-dot"></div>
+                        <div class="lang-dot"></div>
+                        <div class="lang-dot"></div>
+                        <div class="lang-dot empty"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-certificate"></i></div>
+                Certifications
+            </h2>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fab fa-github"></i></div>
+                <div class="cert-content">
+                    <div class="cert-title">Git and GitHub</div>
+                    <div class="cert-org">Udemy</div>
+                    <div class="cert-desc">Mastery of version control, advanced use of Git and GitHub, GitHub Pages, branch creation, and descriptive commits.</div>
+                    <a href="https://www.udemy.com/certificate/UC-c89ebe4b-b9ce-48ea-ba08-defb6645f09d/" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fab fa-linux"></i></div>
+                <div class="cert-content">
+                    <div class="cert-title">Linux Unhatched</div>
+                    <div class="cert-org">Cisco Networking Academy</div>
+                    <div class="cert-desc">Basic Linux commands for programming: navigation, file and directory manipulation.</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fab fa-git-alt"></i></div>
+                <div class="cert-content">
+                    <div class="cert-title">Git Cursa</div>
+                    <div class="cert-org">Online Learning Platform</div>
+                    <div class="cert-desc">Git fundamentals for teamwork and collaborative versioning.</div>
+                </div>
+            </div>
+            <a href="https://github.com/JV-L0pes/Certificados" target="_blank" class="github-link" style="margin-top: 1rem; display: inline-flex;">
+                <i class="fas fa-certificate"></i>
+                <span>View all certificates</span>
+            </a>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon"><i class="fas fa-link"></i></div>
+                Important Links
+            </h2>
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+                    <span><strong>Certificates:</strong> github.com/JV-L0pes/Certificados</span>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-envelope"></i></div>
+                    <span><strong>Email:</strong> joaovlr9@gmail.com</span>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-linkedin"></i></div>
+                    <span><strong>LinkedIn:</strong> linkedin.com/in/joão-victor-lopes-rosa-a7a558363</span>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <span><strong>Portfolio:</strong> jv-l0pes.github.io</span>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <span><strong>Burndown Chart Generator:</strong> github.com/JV-L0pes/burndown-chart</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
