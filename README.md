@@ -45,4 +45,4 @@ Você pode visualizar o currículo de duas maneiras:
 
 ## Última Atualização
 
-Última atualização: 07 de Maio de 2025.
+Última atualização: 29 de Maio de 2025.
